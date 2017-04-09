@@ -1,5 +1,5 @@
 <html>
-	<h1>Register for MarvelMarks</h1>
+	<h1>Register for HACKATHON PROJECT</h1>
 	<form action='register.php' method='POST'>
 		<table>
 			<tr>
@@ -72,7 +72,7 @@
 					else
 					{
 						//open db
-						$hostname = "hackathon@cjmarquart.com";
+						$hostname = "localhost";
 						$dbloginusername = "hackathon";
 						$dbloginpassword = "muffin";
 						$connect = mysql_connect("$hostname", "$dbloginusername", "$dbloginpassword") or die("Could not connect to MySQL database at address " . $hostname . " using provided login credentials!");
@@ -90,9 +90,9 @@
 						$password = password_hash($password, PASSWORD_DEFAULT);
 
 						//send data to db
-						$queryreg = mysql_query("INSERT INTO User(id, username, password, email, date) VALUES ('', '$username','$password', '$email', '')");
+						$queryreg = mysql_query("INSERT INTO User(id, username, password, email) VALUES ('', '$username','$password', '$email')");
 
-						die("You have successfully registered for MarvelMarks! <a href='login.html'>Return to login page.</a>");
+						die("You have successfully registered for CHANGE NAME OF PROJECT HERE! <a href='login.html'>Return to login page.</a>");
 					}
 				}
 			}
