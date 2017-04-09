@@ -1,10 +1,7 @@
 <!DOCTYPE>
 <html>
-<head>
-    <title>Dashboard2</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
     <title>Dashboard</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -16,10 +13,7 @@
 
 
 
-<!-- The Modal -->
 <div id="myModal" class="modal">
-
-    <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
             <span class="close">&times;</span>
@@ -29,6 +23,7 @@
             <form id="form1">
                 <p>What work do you need help with? <input type="text" name="work" id="workText" class="textField"><br></p>
                 <p>How much do you agree to pay?  <input type="text" name="pay" id="payText" class="textField"><br></p>
+                <p>When: (ASAP, Tomorrow, or Date)  <input type="text" name="when" id="whenText" class="textField"><br></p>
             </form>
         </div>
         <div class="modal-footer">
@@ -38,8 +33,21 @@
 
 </div>
 
-<p id="demo"></p>
-<p id="demo2"></p>
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Confirmation:</h2>
+        </div>
+        <div class="modal-body">
+            <p id="demo" class="moveRight"></p>
+            <p id="demo2" class="moveRight"></p>
+            <p id="demo3" class="moveRight"></p>
+        </div>
+    </div>
+</div>
+
+
 
 <script>
     function myFunction() {
@@ -47,40 +55,51 @@
         var x = document.getElementById("form1");
         var work = x.elements[0].value;
         var pay = x.elements[1].value;
+        var when = x.elements[2].value;
+        when = when.toUpperCase();
 
 
         if (work != null) {
             document.getElementById("demo").innerHTML =
-                "Finding help for " + work + "...";
+                "New Quest: " + work;
+        }
+        if (when != null) {
+            document.getElementById("demo3").innerHTML =
+                "When: " + when;
         }
         if (pay != null) {
             document.getElementById("demo2").innerHTML =
-                "You agree to pay " + pay + " for the job.";
+                "You agree to pay " + pay + " for the Quest.";
         }
+
         addBox();
         function addBox() {
             var div = document.createElement("div");
             div.setAttribute('class', 'box');
-            div.innerHTML = work + "\r" + pay;
-            div.style.paddingTop = 10;
-            div.style.paddingLeft = 10;
+            div.innerHTML = "<div id='splitWork'>Quest: " + work + "</div>" + "<div id='splitPay'>Pay: "
+                + pay + "</div>" + "<div id='splitWhen'>" + when + "</div>";
+            div.style =
             document.body.appendChild(div);
         }
 
         // Close modal after user submits the post
         var modal = document.getElementById('myModal');
         modal.style.display = "none";
+        var modal2 = document.getElementById('myModal2');
+        modal2.style.display = "block";
 
     }
 
     // Get the modal
     var modal = document.getElementById('myModal');
+    var modal2 = document.getElementById('myModal2');
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close")[1];
 
     // When the user clicks the button, open the modal
     btn.onclick = function() {
@@ -91,11 +110,19 @@
     span.onclick = function() {
         modal.style.display = "none";
     }
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+        }
+    }
+    window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
         }
     }
 </script>
