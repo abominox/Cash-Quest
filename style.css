@@ -1,0 +1,29 @@
+
+
+#headTitle {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#locationTag {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#findQuestsButton {
+    margin-top: 2em;
+}
+
+#locationText {
+    font-size: 2em;
+}
+
+#footer > p {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 5em;
+}
