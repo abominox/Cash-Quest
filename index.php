@@ -18,7 +18,7 @@
         <h1 id="headTitle">Find a Quest!</h1>
         <div id="topButtons">
             <!-- <button onclick="findQuests()" id="findQuestsButton" class="button">Find Quests</button> -->
-            <button type="button" onclick="myFunction()" class="button">New user</button>
+            <button type="button" id="myBt" onclick="myFunction()" class="button">New user</button>
             <button type="button" onclick="alert('Hello world!')" class="button">Sign in</button>
         </div>
     </div>
@@ -36,7 +36,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button onclick="myFunction()" class="button" id="doneButton">Create Account</button>
+                <a href="dashboard.html"><button onclick="myFunction()" class="button" id="doneButton">Create Account</button></a>
             </div>
             <button type="button" onclick="location.href='html/register.php';" class="button">New user</button>
             <button type="button" onclick="location.href='html/login.html';" class="button">Sign in</button>
@@ -59,13 +59,13 @@
             var x = document.getElementById("form1");
             var username = x.elements[0].value;
             var password = x.elements[1].value;
-            var password = x.elements[2].value;
+            var email = x.elements[2].value;
             createUser();
 
 
             function createUser() {
                 <?php
-                    $submit = strip_tags($_POST['submit']);
+                    $submit = 
                     $username = strtolower(strip_tags($_POST['username']));
                     $password = strip_tags($_POST['password']);
                     $repeatpassword = strip_tags($_POST['repeatpassword']);
@@ -133,7 +133,7 @@
         var modal = document.getElementById('myModal');
 
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var btn = document.getElementById("myBt");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
