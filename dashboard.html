@@ -10,6 +10,7 @@
     <h2 id="pageTitle">Location: {{ location }}</h2>   <!--DON'T HARD CODE THE LOCATOIN!!-->
 
     <button id="myBtn" class="button">Create Post</button>
+    <a href="index.html"><button id="myBtn1" class="button">Home</button></a>
 </div>
 
 
@@ -22,9 +23,9 @@
         </div>
         <div class="modal-body">
             <form id="form1">
-                <p>What work do you need help with? <input type="text" name="work" id="workText" class="textField"><br></p>
-                <p>How much do you agree to pay?  <input type="text" name="pay" id="payText" class="textField"><br></p>
-                <p>When: (ASAP, Tomorrow, or Date)  <input type="text" name="when" id="whenText" class="textField"><br></p>
+                <p class="pargInd">What work do you need help with? <input type="text" name="work" id="workText" class="textField"><br></p>
+                <p class="pargInd">How much do you agree to pay? <input type="text" name="pay" id="payText" value="$" class="textField"><br></p>
+                <p class="pargInd">When (ASAP, Tomorrow, or Date)?   <input type="text" name="when" id="whenText" class="textField"><br></p>
             </form>
         </div>
         <div class="modal-footer">
@@ -44,6 +45,7 @@
             <p id="demo" class="moveRight"></p>
             <p id="demo2" class="moveRight"></p>
             <p id="demo3" class="moveRight"></p>
+            <button class="button" id="confirmButton">Confirm</button>
         </div>
     </div>
 </div>
@@ -77,9 +79,8 @@
         function addBox() {
             var div = document.createElement("div");
             div.setAttribute('class', 'box');
-            div.innerHTML = "<div id='splitWork'>Quest: " + work + "</div>" + "<div id='splitPay'>Pay: "
+            div.innerHTML = "<div id='splitWork'>Quest: " + work + "</div>" + "<div id='exitX'><span class='close'>&times;</span></div>" + "<div id='splitPay'>Pay: "
                 + pay + "</div>" + "<div id='splitWhen'>" + when + "</div>";
-            div.style =
             document.body.appendChild(div);
         }
 
