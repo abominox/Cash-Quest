@@ -1,4 +1,4 @@
-* {
+* :not(.rankHeader, .leaderBStyle, ){
     background-color: dimgrey;
     font-family: sans-serif;
 }
@@ -203,4 +203,55 @@
 
 #demo2 {
     color: red;
+}
+
+.leaderBStyle {
+    color: #c68c53;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+
+.rankHeader {
+    background-color: rgba(38,38,38,.5);
+    width: 60%;
+    height: auto;
+}
+
+table, td, th {
+    border: 2px solid black;
+}
+
+table {
+   margin-top: 100px;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th {
+    height: 50px;
+    font-weight: bold;
+}
+
+tr {
+    text-align: center;
+}
+
+#rankTable {
+    background-color: rgba(38,38,38,.5);
+    color: white;
 }
