@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="header">
+        <h2 id="pageTitle">Location: Indiana, PA</h2>   <!--DONT HARD CODE THE LOCATOIN!!-->
+
+        <button onclick="myFunction()" class="button">Create Post</button>
+    </div>
+
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        function myFunction() {
+            var work = prompt("What task do you need help with?", "Enter here");
+            var pay = prompt("How much are you going to pay?", "Enter here");
+
+            if (work != null) {
+                document.getElementById("demo").innerHTML =
+                    "Finding help for " + work + "...";
+            }
+            if (pay != null) {
+                document.getElementById("demo2").innerHTML =
+                    "You agree to pay " + pay + " for the job.";
+            }
+            addBox();
+            function addBox() {
+                var div = document.createElement("div");
+                div.setAttribute('class', 'box');
+                div.innerHTML = work + "\r" + pay;
+                
+                div.style.paddingTop = 10;
+                div.style.paddingLeft = 10;
+                document.body.appendChild(div);
+            }
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

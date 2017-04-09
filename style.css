@@ -5,8 +5,8 @@
 
 #header {
     display: inline;
-    padding-top: 1em;
-    padding-left: 1em;
+    padding-top: 2em;
+    padding-left: 2em;
 }
 
 #topButtons {
@@ -56,4 +56,36 @@
     bottom: 0;
     padding-bottom: 7em;
     font-size: 1.25em;
+}
+
+#pageTitle {
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+}
+
+.box {
+    display: inline-block;
+    width: 14em;
+    height: 14em;
+    border: dashed;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.box > p {
+    top: 2em;
+    left: 4em;
+}
+
+.header {
+    display: inline;
+}
+
+.header > button {
+    float: right;
+    margin-top: -10em;
+    margin-right: 3em;
+    background-color: white;
 }
