@@ -180,6 +180,32 @@
     background-color: white;
 }
 
+<<<<<<< HEAD
 .moveright {
     padding-left: 2em;
+=======
+#splitWork {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#splitPay {
+    float: right;
+    padding-right: 1em;
+    padding-top: 10em;
+    color: lawngreen;
+}
+
+#splitWhen {
+    padding-left: 1em;
+    padding-top: 10em;
+}
+
+.moveRight {
+    margin-left: 2em;
+}
+
+#demo2 {
+    color: red;
+>>>>>>> master
 }
