@@ -1,0 +1,18 @@
+body {
+	color: #271a0c;
+}
+
+
+
+table, td, th {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th {
+    height: 50px;
+}
