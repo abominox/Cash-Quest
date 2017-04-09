@@ -30,9 +30,9 @@
 					else
 					{
 						//open db
-						$hostname = "";
-						$dbloginusername = "";
-						$dbloginpassword = "";
+						$hostname = "localhost";
+						$dbloginusername = "hackathon";
+						$dbloginpassword = "muffin";
 						$connect = mysql_connect("$hostname", "$dbloginusername", "$dbloginpassword") or die("Could not connect to MySQL database at address " . $hostname . " using provided login credentials!");
 						mysql_select_db("hackathon");
 
@@ -48,7 +48,7 @@
 						$password = password_hash($password, PASSWORD_DEFAULT);
 
 						//send data to db
-						$queryreg = mysql_query("INSERT INTO User(id, username, password, email, date) VALUES ('', '$username','$password', '$email', '$date')");
+						$queryreg = mysql_query("INSERT INTO User(id, username, password, email, date) VALUES ('', '$username','$password', '$email', '')");
 
 						die("You have successfully registered for MarvelMarks! <a href='login.html'>Return to login page.</a>");
 					}

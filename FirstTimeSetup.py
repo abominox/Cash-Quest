@@ -10,5 +10,12 @@ data['username'] = db_username
 data['password'] = db_password
 json_data = json.dumps(data, )
 
-with open('/var/www/html/misc/config.json', 'w') as outputfile:
+with open('config.json', 'w') as outputfile:
     json.dump(data, outputfile)
+
+    import tkinter as tk
+    from tkinter import filedialog
+
+    root = tk.Tk()
+    root.withdraw()
+    file_path = filedialog.askopenfilename()

@@ -11,9 +11,9 @@
 
 	if ($username && $password)
 	{
-		$hostname = "";
-		$dbloginusername = "";
-		$dbloginpassword = "";
+		$hostname = "localhost";
+		$dbloginusername = "hackathon";
+		$dbloginpassword = "muffin";
 		$connect = mysql_connect("$hostname", "$dbloginusername", "$dbloginpassword") or die("Could not connect to MySQL database at address " . $hostname . " using provided login credentials!");
 		mysql_select_db("hackathon") or die("Could not find specified database!");
 
