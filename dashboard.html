@@ -38,8 +38,8 @@
 
 </div>
 
-<p id="demo"></p>
-<p id="demo2"></p>
+<p id="demo" class="moveright"></p>
+<p id="demo2" class="moveright"></p>
 
 <script>
     function myFunction() {
@@ -61,9 +61,7 @@
         function addBox() {
             var div = document.createElement("div");
             div.setAttribute('class', 'box');
-            div.innerHTML = work + "\r" + pay;
-            div.style.paddingTop = 10;
-            div.style.paddingLeft = 10;
+            div.innerHTML = work + "<br>" + "<span style='float: right; padding-right: 1em; vertical-align: bottom;'>" + pay + "</span>";
             document.body.appendChild(div);
         }
 
