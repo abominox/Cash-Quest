@@ -8,6 +8,8 @@
 	$jsonName = file_get_contents('/var/www/html/misc/config.json');
 
 	$json = json_decode($jsonName, true);
+ 
+   //parse data from json into config file here
 
 	if ($username && $password)
 	{
@@ -30,7 +32,7 @@
 				//check to see if they match
 				if ($username == $dbusername && password_verify($password, $dbpassword))
 				{
-					header('Location: index.php');
+					header('Location: index.html');
 					$_SESSION['username'] = $username;
 				}
 				else
