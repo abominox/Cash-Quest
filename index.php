@@ -17,7 +17,8 @@
     <div id="header">
         <h1 id="headTitle">Find a Quest!</h1>
         <div id="topButtons">
-            <button type="button" onclick="location.href='php/register.php';" class="button">New user</button>
+            <!-- <button onclick="findQuests()" id="findQuestsButton" class="button">Find Quests</button> -->
+            <button type="button" onclick="myFunction()" class="button">New user</button>
             <button type="button" onclick="alert('Hello world!')" class="button">Sign in</button>
         </div>
     </div>
