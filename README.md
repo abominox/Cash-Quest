@@ -25,3 +25,10 @@ $expGain = 0.8 * $reward;
 ```
 
 Registration for the website is split into two sides: player and tasker. To at least somewhat verify a player is a student of a institution of higher education, a .edu email address must be used when signing up as a player. A tasker, on the other hand, can be either a fellow player or a member of the community, but a Tasker cannot be a player.
+
+### Team
+- [Aziz Ali](https://github.com/aaali2017)
+- [Bransyn Luther](https://github.com/bransynluther)
+- [Dan Richmond](https://github.com/danrichmond)
+- [Josh Stearsman](https://github.com/JStearsman)
+- [Chris Marquart](https://github.com/RaxEmRemy)
