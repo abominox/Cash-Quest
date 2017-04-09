@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html>
+<script language="javascript">
+    function findQuests() {
+        var x = document.getElementById("locationForm");
+        var location = x.elements[0].value;
+        /*Send location to search on backend*/
+
+    }
+</script>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
 <body>
-    <h1>Hi Josh</h1>
+    <div id="header">
+        <h1 id="headTitle">Find a Quest!</h1>
+        <div id="topButtons">
+            <button type="button" onclick="alert('Hello world!')" class="button">New user</button>
+            <button type="button" onclick="alert('Hello world!')" class="button">Sign in</button>
+        </div>
+    </div>
+    <div id="locationSection">
+        <div id="firstLine">
+            <form id="locationForm">
+                <p id="locationParag">Location <input type="text" name="location" id="textField"><br></p>
+            </form>
+        </div>
+
+        <button onclick="findQuests()" id="findQuestsButton" class="button">Find Quests</button>
+    </div>
 </body>
+<footer id="footer">
+    <p>Post a job and help college students financially <br>or if you are a student, search your local area for quests!</p>
+</footer>
 </html>

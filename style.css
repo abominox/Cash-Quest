@@ -1,0 +1,59 @@
+* {
+    background-color: dimgrey;
+    font-family: sans-serif;
+}
+
+#header {
+    display: inline;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#topButtons {
+    width: 100%;
+    margin-left: 80%;
+    margin-top: -3em;
+}
+
+.button {
+    background-color: white;
+    width: 8em;
+    height: 3em;
+}
+
+#headTitle {
+    color: white;
+    padding-left: 2em;
+}
+
+#locationSection {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#findQuestsButton {
+    margin-top: 2em;
+    background-color: white;
+}
+
+#locationParag {
+    padding-top: 3em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+}
+
+#textField {
+    background-color: white;
+    height: 2em;
+}
+
+#footer > p {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 7em;
+    font-size: 1.25em;
+}
