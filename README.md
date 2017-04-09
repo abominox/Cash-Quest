@@ -15,7 +15,7 @@ Created as part of the [HackPSU Hackathon](https://hackpsu.org/), April 8 - 9, 2
 
 # [Cash Quest](http://cjmarquart.com/misc/HackathonWorkingTitle/html/login.html)
 
-NAME is a gamified, local odd-jobs service for college students. Much in the same way as a traditional role-playing game, "players" (the students) take on "quests" (jobs) given either by other students or members of their local community. By completing quests, players can not only earn real world currency, but also gain experience points and gain levels as a result.
+Cash Quest is a gamified, local odd-jobs service for college students. Much in the same way as a traditional role-playing game, "players" (the students) take on "quests" (jobs) given either by other students or members of their local community. By completing quests, players can not only earn real world currency, but also gain experience points and gain levels as a result.
 
 A player will be paid a posted amount of money at the satisfactory conclusion of each quest, and this money will be factored into a very simple formula that calculates how much exp a player will receive for a given quest:
 
