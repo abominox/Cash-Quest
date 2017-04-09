@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<title>LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css" />	
+</head>
+
+<html>
+	<body>
+		<div class="contentBox">
+			<center>
+				<h1>Welcome to <br>MarvelMarks</h1>
+			</center>
+			<form action = 'login.php' method='POST'>
+				Username: <input type='text' name='username'><br>
+				Password: <input type='password' name='password'><br>
+				<input type='submit' value='Log in'>
+			</form>
+			<p>Don't have an account? <a href='register.php'>Click here to register.</a></p>
+		</div>
+		
+		<!-- Add poster="image.jpg" to video tag for display on screens with less than 800px instead of video
+		Videos obtained from http://www.wedistill.io/videos free for personal and commercial use-->
+		<video playsinline autoplay muted loop poster="video/preview.png"id="bgvid">
+			<source src=bg/1.mp4 type="video/mp4">
+		</video>
+		
+	</body>
+</html>
