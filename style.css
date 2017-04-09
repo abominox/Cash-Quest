@@ -5,8 +5,8 @@
 
 #header {
     display: inline;
-    padding-top: 1em;
-    padding-left: 1em;
+    padding-top: 2em;
+    padding-left: 2em;
 }
 
 #topButtons {
@@ -56,4 +56,126 @@
     bottom: 0;
     padding-bottom: 7em;
     font-size: 1.25em;
+}
+
+#pageTitle {
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+}
+
+.box {
+    display: inline-block;
+    width: 14em;
+    height: 14em;
+    border: dashed;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.box > p {
+    top: 2em;
+    left: 4em;
+}
+
+.header {
+    display: inline;
+}
+
+.header > button {
+    float: right;
+    margin-top: -10em;
+    margin-right: 3em;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top:-300px; opacity:0
+    }
+    to {
+        top:0; opacity:1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top:-300px; opacity:0
+    }
+    to {
+        top:0; opacity:1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    color: white;
+}
+
+.textField {
+    background-color: white;
 }
